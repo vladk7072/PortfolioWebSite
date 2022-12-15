@@ -1,0 +1,115 @@
+.languages {
+  display: flex;
+  align-items: center;
+  &__image {
+    padding: 10px;
+    svg {
+      transition: all 0.2s;
+      fill: #000;
+      display: grid;
+      grid-template-columns: minmax(18px, 18px);
+    }
+    &--dark {
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    transition: all 0.2s;
+    &--dark {
+      background-color: #0a0a0a;
+      & .languages__item {
+        &:hover {
+          color: #fff;
+        }
+      }
+      & .languages__item--active {
+        color: #fff;
+      }
+    }
+  }
+  &__item {
+    cursor: pointer;
+    padding: 10px;
+    color: #767676;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    transition: all 0.2s;
+    &--active {
+      color: #000;
+    }
+    &:hover {
+      color: #000;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .languages {
+    &__item {
+      padding: 8px;
+    }
+    &__image {
+      padding: 8px;
+    }
+  }
+}
+@media (max-width: 545px) {
+  .languages {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    z-index: 30;
+    &__image {
+      order: 2;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
+    &__wrapper {
+      -webkit-box-shadow: 0px -4px 15px -5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px -4px 15px -5px rgba(0, 0, 0, 0.2);
+      max-width: 100%;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 0 8px 0 0;
+      &-inner {
+        transition: all 0.2s;
+        transform: translateX(-100%);
+        &--active {
+          transform: translateX(0);
+        }
+      }
+    }
+    &__item {
+      padding: 15px;
+    }
+  }
+}
+@media (max-width: 376px) {
+  .languages {
+    bottom: 0;
+    &__image {
+      padding: 15px;
+      svg {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+}

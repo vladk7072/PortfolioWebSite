@@ -1,0 +1,149 @@
+@import "./normalize.css";
+@import "./fonts.scss";
+
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #767676;
+  outline: 1px solid transparent;
+}
+
+
+.app {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  overflow: hidden;
+  transition: all 0.2s;
+  *::selection {
+    color: #000;
+    background-color: initial;
+  }
+  *::-moz-selection {
+    background-color: #000;
+  }
+  &--dark {
+    background-color: #000;
+    *::selection {
+      color: #fff;
+      background-color: initial;
+    }
+    *::-moz-selection {
+      background-color: #fff;
+    }
+  }
+  &__content {
+    padding: 0 60px;
+    margin-left: 300px;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+  }
+}
+.content {
+  position: relative;
+  &__page {
+    padding: 60px 0;
+  }
+}
+.table {
+  &__infome {
+    padding: 20px;
+    background-color: #ededed;
+    border-radius: 8px;
+    transition: all 0.2s;
+    margin: 30px 0;
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &--dark {
+      background-color: #0a0a0a;
+    }
+    &-nonm {
+      margin: 0;
+    }
+    &-title {
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 24px;
+      color: #000;
+      transition: all 0.2s;
+      &--dark {
+        color: #fff;
+      }
+    }
+    &-text {
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      color: #767676;
+      &--underline {
+        text-decoration: underline;
+      }
+      &-link {
+        text-decoration: underline;
+      }
+    }
+    &-item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 15px;
+      & + .table__infome-item {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .app {
+    &__content {
+      margin-left: 180px;
+    }
+  }
+}
+@media (max-width: 769px) {
+  .app {
+    &__content {
+      padding: 25px 25px 75px 25px;
+    }
+  }
+}
+@media (max-width: 590px) {
+  .table {
+    &__infome {
+      &-item {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+@media (max-width: 545px) {
+  .app {
+    &__content {
+      margin: 0;
+    }
+  }
+  .content {
+    &__page {
+      padding: 30px 0;
+    }
+  }
+}
+@media (max-width: 376px) {
+  .app {
+    &__content {
+      padding: 15px 15px 75px 15px;
+    }
+  }
+}

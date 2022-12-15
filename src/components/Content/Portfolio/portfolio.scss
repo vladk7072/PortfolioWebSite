@@ -1,0 +1,120 @@
+.portfolio {
+  padding: 30px 0;
+  &__items {
+    display: grid;
+    grid-gap: 30px;
+  }
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    align-items: start;
+    &-image {
+      display: inline-block;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.2s;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    &-img {
+      object-fit: cover;
+    }
+    &-title {
+      font-family: Roboto;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      color: #000;
+      margin: 20px 0;
+      transition: all 0.2s;
+    }
+    &-box {
+      &--dark {
+        .portfolio__item-title {
+          color: #fff;
+        }
+      }
+    }
+    &-deploy {
+      cursor: pointer;
+      &-title {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        color: #767676;
+        display: inline-flex;
+        align-items: center;
+        padding: 5px;
+        margin-left: 20px;
+      }
+      &-link {
+        margin-left: 6px;
+      }
+    }
+  }
+  &__list {
+    height: 0;
+    overflow: hidden;
+    &--active {
+      height: 100%;
+    }
+    &-link {
+      display: inline-block;
+      padding: 3px;
+      margin-left: 22px;
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      color: #767676;
+      text-decoration: underline;
+      transition: all 0.2s;
+      &:hover {
+        color: #000;
+        letter-spacing: 0.8px;
+      }
+      &--dark {
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1210px) {
+  .portfolio {
+    &__item {
+      &-deploy {
+        &-title {
+          margin-left: 0;
+        }
+      }
+    }
+    &__list {
+      &-link {
+        flex-wrap: wrap;
+        margin-left: 0;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .portfolio {
+    &__items {
+      grid-gap: 35px;
+    }
+    &__item {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      &-image {
+        &:hover {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
