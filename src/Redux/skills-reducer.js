@@ -1,5 +1,5 @@
 import { FaReact } from "react-icons/fa";
-import { SiRedux } from "react-icons/si";
+import { SiJest, SiRedux, SiTestinglibrary } from "react-icons/si";
 import { AiFillHtml5 } from "react-icons/ai";
 import { SiCsswizardry } from "react-icons/si";
 import { SiSass } from "react-icons/si";
@@ -12,6 +12,21 @@ import { SiTypescript } from "react-icons/si";
 
 let initialState = {
   items: [
+    {
+      title: "HTML",
+      text: "skills.items5",
+      img: <AiFillHtml5 color="#D84924" />,
+    },
+    {
+      title: "Css",
+      text: "skills.items6",
+      img: <SiCsswizardry color="#0170BC" />,
+    },
+    {
+      title: "Scss",
+      text: "skills.items7",
+      img: <SiSass color="#C36192" />,
+    },
     {
       title: "React",
       text: "skills.items1",
@@ -33,19 +48,14 @@ let initialState = {
       img: <SiJavascript color="#EAD41C" />,
     },
     {
-      title: "HTML",
-      text: "skills.items5",
-      img: <AiFillHtml5 color="#D84924" />,
+      title: "Jest",
+      text: "skills.items71",
+      img: <SiJest color="#E43906" />,
     },
     {
-      title: "Css",
-      text: "skills.items6",
-      img: <SiCsswizardry color="#0170BC" />,
-    },
-    {
-      title: "Scss",
-      text: "skills.items7",
-      img: <SiSass color="#C36192" />,
+      title: "React Testing Library",
+      text: "skills.items72",
+      img: <SiTestinglibrary color="#FE0100" />,
     },
     {
       title: "Git | Github",
@@ -76,6 +86,7 @@ let initialState = {
     { title: "skills.skills5" },
     { title: "skills.skills6" },
     { title: "skills.skills7" },
+    { title: "skills.skills71" },
     { title: "skills.skills8" },
     { title: "skills.skills9" },
     { title: "skills.skills10" },
@@ -99,7 +110,6 @@ let initialState = {
     { title: "skills.plugins8" },
     { title: "skills.plugins9" },
     { title: "skills.plugins10" },
-    { title: "skills.plugins11" },
     { title: "skills.plugins12" },
     { title: "skills.plugins13" },
   ],
@@ -112,9 +122,7 @@ let initialState = {
     },
     { title: "skills.additional3" },
   ],
-  foreigns: [
-    { title: "skills.foreign1" },
-  ],
+  foreigns: [{ title: "skills.foreign1" }],
 };
 const skillsReducer = (state = initialState, action) => {
   switch (action.type) {
