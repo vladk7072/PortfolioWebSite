@@ -12,6 +12,9 @@ import { connect } from "react-redux";
 const App = (props) => {
   const { t, i18n } = useTranslation();
 
+  const check = document.history;
+  console.log(check);
+
   return (
     <div className={props.modeDark ? "app app--dark" : "app"}>
       <BarMenuContainer i18n={i18n} t={t} />

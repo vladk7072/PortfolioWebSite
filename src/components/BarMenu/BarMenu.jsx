@@ -30,6 +30,9 @@ const BarMenu = (props) => {
               }
               key={i}
               to={barItem.link}
+              onClick={() => {
+                document.title = `${props.t(`${barItem.item}`)}`;
+              }}
             >
               {barItem.icon}
               <div className="barMenu__item">{props.t(`${barItem.item}`)}</div>
