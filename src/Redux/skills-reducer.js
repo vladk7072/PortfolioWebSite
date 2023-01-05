@@ -96,7 +96,6 @@ let initialState = {
     { title: "skills.list2" },
     { title: "skills.list3" },
     { title: "skills.list4" },
-    { title: "skills.list5" },
   ],
   plugins: [
     { title: "skills.plugins1" },

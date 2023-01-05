@@ -2,7 +2,7 @@ import React from "react";
 import "./home.scss";
 import myPhoto from "./../../../assets/images/myPhoto.jpg";
 import { BsDownload } from "react-icons/bs";
-import myCV from "./../../../assets/newresume.docx";
+import myCV from "./../../../assets/resume.pdf";
 import { ScrollToTopOnMount } from "./../../../helpers/RouterUp";
 
 const Home = (props) => {
@@ -41,7 +41,7 @@ const Home = (props) => {
             download
           >
             <BsDownload />
-            CV
+            CV (pdf)
           </a>
           <h2
             className={
@@ -74,6 +74,8 @@ const Home = (props) => {
                         : "home__box-socials-link"
                     }
                     href={i.link}
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     {i.image}
                   </a>

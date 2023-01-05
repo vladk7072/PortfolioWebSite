@@ -14,10 +14,9 @@
   },
   "home": {
     "name": "Кравченко Владислав",
-    "text": "20 років, Київ. Front-end розробник з комерційним досвідом роботи рік. Сумарний досвід у IT 3 роки."
+    "text": "21 рік, Київ. Front-end розробник з сумарний досвідом в IT 3 роки."
   },
   "portfolio": {
-    "title0": "Todo додаток, бекенд на mockAPI",
     "title1": "Багатосторінковий сайт для меблів з дерева",
     "title2": "Багатосторінковий сайт для притулку тварин",
     "title3": "Багатосторінковий інформативний сайт для онлайн-казино",
@@ -38,20 +37,20 @@
     "items5": "3 роки",
     "items6": "3 роки",
     "items7": "3 роки",
-    "items71": "початківець",
-    "items72": "початківець",
-    "items8": "3 роки",
-    "items9": "3 роки",
-    "items10": "3 роки",
-    "items11": "3 роки",
+    "items71": "",
+    "items72": "",
+    "items8": "",
+    "items9": "",
+    "items10": "",
+    "items11": "",
     "skillstitle": "Навички",
     "skills1": "React програмування",
     "skills2": "Redux / Redux Toolkit + RTK Query",
     "skills3": "JavaScript / TypeScript",
     "skills4": "HTML-верстка",
     "skills5": "HTML, CSS / SCSS",
-    "skills6": "Rest API, Axios",
-    "skills7": "GitHub",
+    "skills6": "Rest API, Axios, Apollo + GrapgQL",
+    "skills7": "GitHub / Vercel",
     "skills71": "Jest / React Testing Library написання тестів",
     "skills8": "Figma / Adobe Photoshop",
     "skills9": "Професійна адаптивна верстка сайту досить високої складності",
@@ -59,9 +58,8 @@
     "listTitle": "Архітектура роботи",
     "list1": "При програмуванні веб-додатку на React за основу використовую таку архітектуру:",
     "list2": "- UI layer – scss або модульне підключення стилів, контекс через бібліотеку react-redux connect-oм або хуками, compose, кастомні хуки, HOC та ін",
-    "list3": "- BLL (Business Logic Layer) - Redux / Redux Toolkit, RTK Query, thunkMiddleware та ін",
-    "list4": "- DAL (Data Access Layer) – Axios, fetch",
-    "list5": "Дотримуюся позиції презентаційних та контейнерних компонентів",
+    "list3": "- BLL (Business Logic Layer) - Redux / Redux Toolkit, RTK Query",
+    "list4": "- DAL (Data Access Layer) – Axios, Apollo + GrapgQL",
     "plugins1": "Основні плагіни/бібліотеки, якими активно користуюсь: ",
     "plugins2": "- Redux, Redux-Thunk",
     "plugins3": "- Redux Toolkit + RTK Query",
@@ -99,3 +97,4 @@
     "errorMail2": "Приймається електронна пошту в форматі mail@mail.io"
   }
 }
+

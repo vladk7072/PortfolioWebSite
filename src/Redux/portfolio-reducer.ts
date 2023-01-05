@@ -1,7 +1,5 @@
 // @ts-ignore
-import img00 from "./../assets/images/portfolio00.jpg";
-// @ts-ignore
-import img0 from "./../assets/images/portfolio0.jpg";
+// import img0 from "./../assets/images/portfolio0.jpg";
 // @ts-ignore
 import img1 from "./../assets/images/portfolio1.jpg";
 // @ts-ignore
@@ -35,13 +33,13 @@ type Itemtype = {
 
 let initialState = {
   items: [
-    {
-      id: 0,
-      title: "portfolio.title0",
-      img: img0,
-      hasRealLink: "https://todo-board-vladk7072.vercel.app/",
-      isOpen: false,
-    },
+    // {
+    //   id: 0,
+    //   title: "portfolio.title0",
+    //   img: img0,
+    //   hasRealLink: "https://todo-board-vladk7072.vercel.app/",
+    //   isOpen: false,
+    // },
     {
       id: 1,
       title: "portfolio.title2",

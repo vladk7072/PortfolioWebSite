@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import Languages from "./../Content/common/Languages/Languages";
 
 const BarMenu = (props) => {
+
   return (
     <div className={props.modeDark ? "barMenu barMenu--dark" : "barMenu"}>
       <Languages
