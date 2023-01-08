@@ -1,5 +1,5 @@
 import { FaReact } from "react-icons/fa";
-import { SiJest, SiRedux, SiTestinglibrary } from "react-icons/si";
+import { SiRedux, SiTestinglibrary } from "react-icons/si";
 import { AiFillHtml5 } from "react-icons/ai";
 import { SiCsswizardry } from "react-icons/si";
 import { SiSass } from "react-icons/si";
@@ -46,11 +46,6 @@ let initialState = {
       title: "Javascript",
       text: "skills.items4",
       img: <SiJavascript color="#EAD41C" />,
-    },
-    {
-      title: "Jest",
-      text: "skills.items71",
-      img: <SiJest color="#E43906" />,
     },
     {
       title: "React Testing Library",
