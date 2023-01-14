@@ -9,67 +9,65 @@ import { SiAdobephotoshop } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
+import { GrGraphQl } from "react-icons/gr";
 
 let initialState = {
   items: [
     {
       title: "HTML",
-      text: "skills.items5",
       img: <AiFillHtml5 color="#D84924" />,
     },
     {
       title: "Css",
-      text: "skills.items6",
       img: <SiCsswizardry color="#0170BC" />,
     },
     {
       title: "Scss",
-      text: "skills.items7",
       img: <SiSass color="#C36192" />,
     },
     {
       title: "React",
-      text: "skills.items1",
       img: <FaReact color="#61dafb" />,
     },
     {
+      title: "Next.js",
+      img: <SiNextdotjs color="#fff" />,
+    },
+    {
       title: "Redux | Redux Toolkit",
-      text: "skills.items2",
       img: <SiRedux color="#593d88" />,
     },
     {
       title: "TypeScript",
-      text: "skills.items3",
       img: <SiTypescript color="#3178C6" />,
     },
     {
       title: "Javascript",
-      text: "skills.items4",
       img: <SiJavascript color="#EAD41C" />,
     },
     {
+      title: "GraphQL + Apollo",
+      img: <GrGraphQl color="#E535AB" />,
+    },
+    {
       title: "React Testing Library",
-      text: "skills.items72",
       img: <SiTestinglibrary color="#FE0100" />,
     },
     {
       title: "Git | Github",
-      text: "skills.items8",
       img: <FaGithubSquare color="#1A1D21" />,
     },
     {
       title: "Adobe Photoshop",
-      text: "skills.items9",
       img: <SiAdobephotoshop color="#004F86" />,
     },
     {
       title: "Figma",
-      text: "skills.items10",
       img: <FaFigma color="#E64A1C" />,
     },
     {
       title: "Gulp",
-      text: "skills.items11",
       img: <FaGulp color="#C64343" />,
     },
   ],

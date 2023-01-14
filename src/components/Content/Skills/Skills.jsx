@@ -11,7 +11,6 @@ const Skills = (props) => {
     <div className="content__page">
       <ScrollToTopOnMount />
       <Title title={props.t("title.skills")} />
-
       <div className="skills">
         <div className="skills__items">
           {props.items.map((item, indexItem) => (
@@ -26,7 +25,6 @@ const Skills = (props) => {
               <div className="skills__image">{item.img}</div>
               <div className="skills__item-box">
                 <div className="skills__title">{item.title}</div>
-                <div className="skills__text">{props.t(`${item.text}`)}</div>
               </div>
             </div>
           ))}
