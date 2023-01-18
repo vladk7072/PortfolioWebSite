@@ -5,6 +5,7 @@ import { BsDownload } from "react-icons/bs";
 import myCV from "./../../../assets/resume.pdf";
 import { ScrollToTopOnMount } from "./../../../helpers/RouterUp";
 
+
 const Home = (props) => {
   return (
     <div className="home">
