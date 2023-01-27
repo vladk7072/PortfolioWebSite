@@ -1,4 +1,4 @@
-import { mailApi } from "../DAL/api";
+import { mailApi } from "../api/api";
 
 const POST_SUCCESS = "contacts/POST_SUCCESS";
 
