@@ -20,6 +20,8 @@ import img8 from "./../assets/images/portfolio8.jpg";
 import img9 from "./../assets/images/portfolio9.jpg";
 // @ts-ignore
 import img10 from "./../assets/images/portfolio10.jpg";
+// @ts-ignore
+import img11 from "./../assets/images/portfolio11.jpg";
 
 const IS_OPEN = "portfolio/IS_OPEN";
 const IS_CLOSE = "portfolio/IS_CLOSE";
@@ -44,6 +46,13 @@ let initialState = {
     },
     {
       id: 2,
+      title: "portfolio.title12",
+      img: img11,
+      hasRealLink: "https://vladk7072.github.io/appliance-dist/",
+      isOpen: false,
+    },
+    {
+      id: 3,
       title: "portfolio.title2",
       img: img2,
       links: [
@@ -56,7 +65,7 @@ let initialState = {
       isOpen: false,
     },
     {
-      id: 3,
+      id: 4,
       title: "portfolio.title1",
       img: img1,
       links: [
@@ -77,7 +86,7 @@ let initialState = {
       isOpen: false,
     },
     {
-      id: 4,
+      id: 5,
       title: "portfolio.title3",
       img: img3,
       links: [
@@ -109,7 +118,7 @@ let initialState = {
       isOpen: false,
     },
     {
-      id: 5,
+      id: 6,
       title: "portfolio.title4",
       img: img4,
       links: [
@@ -126,7 +135,7 @@ let initialState = {
       isOpen: false,
     },
     {
-      id: 6,
+      id: 7,
       title: "portfolio.title5",
       img: img5,
       links: [
@@ -152,7 +161,7 @@ let initialState = {
       isOpen: false,
     },
     {
-      id: 7,
+      id: 8,
       title: "portfolio.title6",
       img: img6,
       links: ["https://vladk7072.github.io/depsparking/"],
@@ -160,7 +169,7 @@ let initialState = {
       isOpen: false,
     },
     {
-      id: 8,
+      id: 9,
       title: "portfolio.title7",
       img: img7,
       links: [
@@ -178,7 +187,7 @@ let initialState = {
       isOpen: false,
     },
     {
-      id: 9,
+      id: 10,
       title: "portfolio.title8",
       img: img8,
       links: [
@@ -192,7 +201,7 @@ let initialState = {
       isOpen: false,
     },
     {
-      id: 10,
+      id: 11,
       title: "portfolio.title9",
       img: img9,
       links: [
