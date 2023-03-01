@@ -1,5 +1,4 @@
-// @ts-ignore
-// import img0 from "./../assets/images/portfolio0.jpg";
+
 // @ts-ignore
 import img1 from "./../assets/images/portfolio1.jpg";
 // @ts-ignore
@@ -22,6 +21,8 @@ import img9 from "./../assets/images/portfolio9.jpg";
 import img10 from "./../assets/images/portfolio10.jpg";
 // @ts-ignore
 import img11 from "./../assets/images/portfolio11.jpg";
+// @ts-ignore
+import img13 from "./../assets/images/portfolio12.jpg";
 
 const IS_OPEN = "portfolio/IS_OPEN";
 const IS_CLOSE = "portfolio/IS_CLOSE";
@@ -37,6 +38,13 @@ type Itemtype = {
 
 let initialState = {
   items: [
+    {
+      id: 0,
+      title: "portfolio.title13",
+      img: img13,
+      hasRealLink: "dmytrov.vercel.app",
+      isOpen: false,
+    },
     {
       id: 1,
       title: "portfolio.title11",
